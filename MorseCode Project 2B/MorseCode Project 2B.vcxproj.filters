@@ -23,5 +23,8 @@
     <ClInclude Include="src\MorseNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MCNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

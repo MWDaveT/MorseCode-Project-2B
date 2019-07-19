@@ -126,6 +126,7 @@
     <ClCompile Include="src\MorseNode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MCNode.h" />
     <ClInclude Include="src\MorseNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
