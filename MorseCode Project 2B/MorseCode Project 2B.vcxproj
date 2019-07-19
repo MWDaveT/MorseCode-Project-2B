@@ -18,6 +18,14 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MCNode.h" />
+    <ClInclude Include="MorseTree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MCNode.cpp" />
+    <ClCompile Include="MorseTree.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{1A75FC61-0D21-484B-884D-F9952547659A}</ProjectGuid>
@@ -122,13 +130,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="src\MorseNode.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="MCNode.h" />
-    <ClInclude Include="src\MorseNode.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
