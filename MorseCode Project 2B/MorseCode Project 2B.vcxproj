@@ -123,10 +123,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="MorseNode.cpp" />
+    <ClCompile Include="src\MorseNode.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MorseNode.h" />
+    <ClInclude Include="src\MorseNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
