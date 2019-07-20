@@ -23,7 +23,6 @@
     <ClInclude Include="MorseTree.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MCNode.cpp" />
     <ClCompile Include="MorseTree.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
