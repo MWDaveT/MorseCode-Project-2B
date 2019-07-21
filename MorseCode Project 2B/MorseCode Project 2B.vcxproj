@@ -25,6 +25,9 @@
   <ItemGroup>
     <ClCompile Include="MorseTree.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="morse.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{1A75FC61-0D21-484B-884D-F9952547659A}</ProjectGuid>

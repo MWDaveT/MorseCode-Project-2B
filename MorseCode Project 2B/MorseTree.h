@@ -14,24 +14,16 @@ class MorseTree
 public:
 
 	
-	void establish_root(MCNode* newRoot);
-	MCNode* get_Root() const;
-
-	//Constructs empty MorseTree
-	MorseTree() : ptr_root(NULL) {}
+	//Constructs MorseTree given
+	MorseTree();
 
 
 	/**Vritual Destructor */
 	virtual ~MorseTree() {}
 
-	/**Print function */
-	void print();
 
-	/**Encode a string to morse code */
-	std::string morse_encode(morsemap, std::string);
-
-	/**Deconde a string of morse code */
-	std::string morse_decode(morsetree, std::string);
+	/**Print MorseTree using inorder traversal */
+	void print_Morse_tree(MCNode* tree_root);
 
 private:
 	MCNode* ptr_root;;
@@ -45,11 +37,7 @@ private:
 
 	/** destroy morse tree */
 	void destroy_morsetree(MCNode* treeroot);
-
 	
-
-	/**Print MorseTree using inorder traversal */
-	void print_Morse_tree(MCNode* tree_root);
 
 	/**find code in given map for given char */
 	std::string(std::map, char ch);

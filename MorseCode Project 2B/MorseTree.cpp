@@ -1,9 +1,21 @@
 #include "MorseTree.h"
+#include<fstream>
+#include<iostream>
+
 
 MorseTree::MorseTree()
 {
+	std::string str, str1;
 	char Chr = '0';
-	ptr_root = nullptr;
+	MCNode* node = &MCNode();
+	std::ifstream morse;
+	morse.open("morse.txt");
+	while (morse >> str)
+	{
+		morse >> str1;
+		add_char_to_tree(node, str1, str[0]);
+
+	}
 
 }
 MorseTree::~MorseTree()
@@ -14,6 +26,7 @@ MorseTree::~MorseTree()
 	}
 	destroy_morsetree(ptr_root);
 }
+
 
 void MorseTree::add_char_to_tree(MCNode*& Temp_Node, std::string str, char ch)
 {
