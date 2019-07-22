@@ -6,23 +6,20 @@
 
 /**Node for MorseCode Tree */
 
-struct MCNode
+class MCNode
 {
-//Data Fields
+private:
+
+	MCNode();
+	virtual ~MCNode();
+
+	char return_char() const;
+	MCNode*& get_Left_Node();
+	MCNode*& get_right_Node();
+
 	char data_chr;
 	MCNode* left_ptr;
 	MCNode* right_ptr;
-
-//Constructors
-	MCNode() {
-		left_ptr = NULL;
-		right_ptr = NULL;
-		char c = '0';
-	}
-
-//Destructor
-	virtual ~MCNode() {}
-
 
 
 };

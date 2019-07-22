@@ -14,7 +14,6 @@ MorseTree::MorseTree()
 	{
 		morse >> str1;
 		add_char_to_tree(node, str1, str[0]);
-
 	}
 
 }
@@ -50,6 +49,18 @@ void MorseTree::add_char_to_tree(MCNode*& Temp_Node, std::string str, char ch)
 	}
 }
 
+void MorseTree::print()
+{
+	print_Morse_tree(Root);
+}
+
+MCNode* MorseTree::new_MCNode(const char chr)
+{
+	MCNode* Node = new MCNode(char chr);
+	return Node;
+}
+
+
 char MorseTree::get_char_from_code(MCNode* Temp_Node, std::string str)
 {
 	if (Temp_Node->data_chr != '0' && str.size() == 0)
@@ -69,3 +80,22 @@ char MorseTree::get_char_from_code(MCNode* Temp_Node, std::string str)
 	}
 }
 
+void MorseTree::destroy_morsetree(MCNode* Root)
+{
+	if (Root != NULL)
+	{
+		destroy_morsetree(Root->get_Left_Node());
+		destroy_morsetree(Root->get_Right_Node());
+		delete(Root);
+	}
+}
+
+void MorseTree::print_Morse_tree(MCNode* Root) 
+{
+	if (Root != NULL)
+	{
+		print_Morse_tree(Root->get_Left_Node());
+		std::cout << "The Character is: " << Root->return_char() << std::endl;
+		print_Morse_tree(Root->get_Right_Node());
+	}
+}
